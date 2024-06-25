@@ -6,6 +6,7 @@
     <title>Dan.Tech19 - Informática</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -20,6 +21,20 @@
             padding: 1em 0;
             text-align: center;
             border-bottom: 2px solid #7f4caf;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #d3d3d3;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #7f4caf;
         }
         .content {
             margin: 2em 0;
@@ -50,6 +65,17 @@
             bottom: 0;
             width: 100%;
         }
+        .social-icons {
+            margin: 10px 0;
+        }
+        .social-icons a {
+            color: #d3d3d3;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        .social-icons a:hover {
+            color: #7f4caf;
+        }
     </style>
 </head>
 <body>
@@ -57,23 +83,29 @@
         <h1>Dan.Tech19</h1>
         <p>Informática</p>
     </header>
+    <nav>
+        <a href="#about">Sobre Mim</a>
+        <a href="#contact">Contato</a>
+    </nav>
     <div class="container content">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <section class="main-content text-center">
+                <section id="about" class="main-content text-center">
                     <h2>Sobre Mim</h2>
-                    <p>Bem-vindo ao Dan.Tech! Sou estudando de informática com experiência em várias áreas, incluindo redes, suporte técnico manutenção de computadores e gerenciamento. Estou sempre buscando novas tecnologias e soluções inovadoras para ajudar a resolver problemas e melhorar a eficiência.</p>
+                    <p>Bem-vindo ao Dan.Tech! Sou estudante de informática com experiência em várias áreas, incluindo redes, suporte técnico, manutenção de computadores e gerenciamento. Estou sempre buscando novas tecnologias e soluções inovadoras para ajudar a resolver problemas e melhorar a eficiência.</p>
                 </section>
             </div>
             <div class="col-md-4">
-                <aside class="sidebar text-center">
+                <aside id="contact" class="sidebar text-center">
                     <h2>Contato</h2>
-                    <p>Para mais informações ou para discutir possíveis projetos, entre em contato comigo pelo WhatsApp, LinkedIn, Instagram, OLX e TikTok.</p>
-                    <a class="button" href="https://api.whatsapp.com/send?phone=5511971657287" target="_blank">Chamar no WhatsApp</a>
-                    <a class="button" href="https://www.linkedin.com/in/danilo-goulart-13b528176?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
-                    <a class="button" href="https://www.olx.com.br/perfil/danilo-goulart-955aa140" target="_blank">OLX</a>
-                    <a class="button" href="https://www.instagram.com/dan.tech19/?igshid=MmJhNzczZWdjbzkw" target="_blank">Instagram</a>
-                    <a class="button" href="https://www.tiktok.com/@dan.tech19/" target="_blank">TikTok</a>
+                    <p>Para mais informações ou para discutir possíveis projetos, entre em contato comigo pelas redes sociais.</p>
+                    <div class="social-icons">
+                        <a class="button" href="https://api.whatsapp.com/send?phone=5511971657287" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a class="button" href="https://www.linkedin.com/in/danilo-goulart-13b528176?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a class="button" href="https://www.olx.com.br/perfil/danilo-goulart-955aa140" target="_blank"><i class="fas fa-store"></i> OLX</a>
+                        <a class="button" href="https://www.instagram.com/dan.tech19/?igshid=MmJhNzczZWdjbzkw" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a class="button" href="https://www.tiktok.com/@dan.tech19/" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                    </div>
                 </aside>
             </div>
         </div>
@@ -87,4 +119,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
