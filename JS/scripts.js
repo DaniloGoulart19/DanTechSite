@@ -20,3 +20,4 @@ $(document).ready(function(){
     // Carrega as avaliações quando a página for carregada
     loadTestimonials();
 });
+
